@@ -7,6 +7,7 @@ Requerimientos para ejecutar este taller
 3. Python 3.x instalado en tu máquina.
 4. Un navegador web moderno (Google Chrome, Firefox, Edge, Safari).
 5. Conexión a Internet para descargar las imágenes de Docker y las dependencias de Python.
+6. MQTT Explorer (opcional, pero recomendado para visualizar mensajes MQTT).
 
 
 ## Instrucciones para ejecutar el taller
