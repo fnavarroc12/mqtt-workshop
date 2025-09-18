@@ -9,7 +9,7 @@ import time
 import json
 import random
 
-def generar_datos_sensor(measure_id: str, valor_min: float, valor_max: float) -> dict:
+def generar_datos_sensor(measure_id: str, valor_min: float, valor_max: float) -> float:
     """
     Genera una lectura de sensor simulada con una distribución normal.
 
@@ -33,14 +33,7 @@ def generar_datos_sensor(measure_id: str, valor_min: float, valor_max: float) ->
     # Asegura que el valor se mantenga dentro de los límites definidos
     valor_final = max(valor_min, min(valor_max, valor_generado))
 
-    # Construye el payload del mensaje
-    payload = {
-        'measure_id': measure_id,
-        'timestamp': time.time(),
-        'value': round(valor_final, 2) # Redondea a 2 decimales
-    }
-    
-    return payload
+    return valor_final
 
 
 # --- Ejemplo de uso ---

@@ -4,11 +4,9 @@ Requerimientos para ejecutar este taller
 
 1. Git instalado en tu máquina.
 2. Docker instalado en tu máquina.
-3. Python 3.x instalado en tu máquina.
-4. Un navegador web moderno (Google Chrome, Firefox, Edge, Safari).
+3. Un navegador web moderno (Google Chrome, Firefox, Edge, Safari).
 5. Conexión a Internet para descargar las imágenes de Docker y las dependencias de Python.
-6. MQTT Explorer (opcional, pero recomendado para visualizar mensajes MQTT).
-
+6. [MQTT Explorer](https://mqtt-explorer.com) (opcional, pero recomendado para visualizar mensajes MQTT).
 
 ## Instrucciones para ejecutar el taller
 
@@ -131,130 +129,6 @@ docker --version
 
 
 
-## Paso 3: Instalación de Python 3.x
+## Paso 3: Preparación del Laboratorio
 
-### Windows
-
-**Opción 1: Descarga desde el sitio oficial (recomendado)**
-1. Ve a [python.org/downloads/](https://www.python.org/downloads/)
-2. Descarga la última versión de Python 3.x para Windows
-3. Ejecuta el instalador descargado
-4. **IMPORTANTE**: Marca la casilla "Add Python to PATH" durante la instalación
-5. Sigue las instrucciones del asistente de instalación
-6. Verifica la instalación abriendo Command Prompt o PowerShell y ejecutando:
-
-```powershell
-python --version
-# o también
-python3 --version
-```
-
-**Opción 2: Usando Microsoft Store**
-1. Abre Microsoft Store
-2. Busca "Python"
-3. Instala la versión más reciente de Python 3.x
-
-### Apple MacOS
-
-**Opción 1: Usando Homebrew (recomendado)**
-```bash
-brew install python3
-```
-
-**Opción 2: Descarga directa**
-1. Ve a [python.org/downloads/](https://www.python.org/downloads/)
-2. Descarga la última versión de Python 3.x para macOS
-3. Ejecuta el instalador .pkg
-4. Sigue las instrucciones de instalación
-
-Verifica la instalación:
-```bash
-python3 --version
-```
-
-### Linux
-
-**Ubuntu/Debian:**
-```bash
-sudo apt update
-sudo apt install python3 python3-pip
-```
-
-**CentOS/RHEL:**
-```bash
-sudo yum install python3 python3-pip
-```
-
-**Fedora:**
-```bash
-sudo dnf install python3 python3-pip
-```
-
-**Arch Linux:**
-```bash
-sudo pacman -S python python-pip
-```
-
-Verifica la instalación:
-```bash
-python3 --version
-pip3 --version
-```
-
-**Nota**: En algunos sistemas Linux, Python 3 ya está preinstalado. Si no tienes `pip` instalado, puedes instalarlo por separado:
-```bash
-# Para la mayoría de distribuciones
-sudo apt install python3-pip  # Ubuntu/Debian
-sudo yum install python3-pip  # CentOS/RHEL
-sudo dnf install python3-pip  # Fedora
-```
-
-## Paso 4: Clonar el repositorio del taller
-
-1. Abre una terminal (Command Prompt, PowerShell, Terminal, etc.)
-2. Navega al directorio donde deseas clonar el repositorio:
-```bashbash
-cd ruta/del/directorio
-```
-3. Clona el repositorio usando Git:
-```bash
-git clone https://github.com/fnavarroc12/mqtt-workshop.git
-``` 
-
-4. Navega al directorio del proyecto:
-```bash
-cd mqtt-workshop
-``` 
-
-## Paso 5: Preparar el entorno de Python
-
-Este taller utiliza un archivo de Jupyter Notebook (.ipynb) para guiarte a través de los conceptos y ejercicios prácticos, por lo cual
-es recomendable usar un entorno virtual para gestionar las dependencias de Python y ejecutar nuestro notebook.
-
-Sigue estos pasos para configurar tu entorno:
-
-1. Crea un entorno virtual (opcional pero recomendado):
-```bash
-python3 -m venv venv
-``` 
-
-2. Activa el entorno virtual:
-   - En Windows:
-   ```bash
-   .\venv\Scripts\activate
-   ```
-   - En macOS/Linux:
-   ```bash
-   source venv/bin/activate
-   ```
-3. Instala Jupyter. En este taller usaremos Jupyter Lab para tener acceso sencillo a los notebooks:
-```bash
-pip install jupyterlab
-``` 
-
-4. Ejecuta Jupyter Lab:
-```bash
-jupyter lab
-```
-
-5. Abre el archivo `workshop.ipynb` en Jupyter Lab para comenzar con el taller.
+Continúa con las instrucciones en el archivo [Containers.md](Containers.md) para configurar los contenedores Docker necesarios para ejecutar el taller.
