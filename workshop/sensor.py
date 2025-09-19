@@ -33,7 +33,7 @@ def generar_datos_sensor(measure_id: str, valor_min: float, valor_max: float) ->
     # Asegura que el valor se mantenga dentro de los límites definidos
     valor_final = max(valor_min, min(valor_max, valor_generado))
 
-    return valor_final
+    return round(valor_final, 2)
 
 
 # --- Ejemplo de uso ---
